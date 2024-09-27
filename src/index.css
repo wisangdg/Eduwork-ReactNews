@@ -121,3 +121,7 @@ body {
 .content {
   flex: 1;
 }
+
+.main {
+  min-height: 800px;
+}
