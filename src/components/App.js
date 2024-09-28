@@ -24,7 +24,7 @@ function App() {
         setLoading(true);
         setError("");
         const response = await fetch(
-          `https://newsapi.org/v2/top-headlines?country=us&q=${query}&apiKey=${API_KEY}`
+          `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=us&q=${query}&apiKey=${API_KEY}`
         );
 
         // {{ edit_1 }} Menambahkan log untuk memeriksa status respons
