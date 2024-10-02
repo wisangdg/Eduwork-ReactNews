@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./1. NavBar components/NavBar";
-import Logo from "./1. NavBar components/Logo";
-import Nav from "./1. NavBar components/Nav";
-import Search from "./1. NavBar components/Search";
-import Main from "./2. Main components/Main";
-import News from "./2. Main components/News";
-import Footer from "./3. Footer components/Footer";
+import Navbar from "./nav-components/NavBar";
+import Logo from "./nav-components/Logo";
+import Nav from "./nav-components/Nav";
+import Search from "./nav-components/Search";
+import Main from "./main-components/Main";
+import News from "./main-components/News";
+import Footer from "./footer-components/Footer";
 
 const API_KEY =
   "ab78ce1999f73505d962cd212aa70a6d2c6e5346f3012612eb0bb8806462f7b5";
@@ -56,7 +56,11 @@ function App() {
   }, [query]);
 
   function Loader() {
-    return <p>Loading...</p>;
+    return (
+      <div className="loader">
+        <p>Loading...</p>;
+      </div>
+    );
   }
 
   return (
